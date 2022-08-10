@@ -7,7 +7,7 @@ git init//初始化本地库
 git add 文件名//添加到暂存区
 git commit -m"注释"//提交版本库
 git status//查看本地库状态
-git remote add origin git@gitee.com:how-to-learn/仓库名称.git//首次关联远程仓库
+git remote add origin https://github.com/QSBQ/仓库名称.git//首次关联远程仓库
 git push -u origin master//首次推送远程仓库
 git push 分支==>推送远程仓库
 ```
@@ -95,7 +95,7 @@ SSH链接：git@github.com:QSBQ/experiment.git
 
 ```
 git推送10053失败解决方案:git config --global http.sslVerify false
-443 after 21073 ms解决方案:git config --global --unset http.proxy
+443 after ××××× ms解决方案:git config --global --unset http.proxy
 长双错误解决方案:git config --global http.sslVerify true
 ```
 
@@ -113,5 +113,12 @@ pip install requests//使用git拉取python代码时，经常需要下载request
 
 ```
 短信轰炸命令：pipenv run python smsboom.py run -t 64 -p 17876442627 -s -i 5
-我的github访问令牌：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
+我的github访问令牌：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
 ```
+
+**坑标注**
+
+```
+如果git文件嵌套，那么提交外部git文件时，内部git文件的内容将不会提交，显示为空
+```
+
