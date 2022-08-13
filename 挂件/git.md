@@ -33,8 +33,8 @@ git branch -d 分支名//删除分支
 ## 远程仓库操作命令
 
 ```
-git config --global user.name==>设置用户签名，用户名(必须设置，否则提交时会报错)
-git config --global user.email==>设置用户签名，邮箱(必须设置，否则提交时会报错)
+git config --global user.name 用户名==>设置用户签名，用户名(必须设置，否则提交时会报错)
+git config --global user.email 邮箱==>设置用户签名，邮箱(必须设置，否则提交时会报错)
 git remote -v==>查看远程库信息
 git remote rm 远程仓库名==>删除和远程库的关联
 git remote add 别名 远程地址==>创建别名
@@ -95,6 +95,8 @@ SSH链接：git@github.com:QSBQ/experiment.git
 
 ```
 git推送10053失败解决方案:git config --global http.sslVerify false
+原因：Git默认限制文件提交的大小。文件大小不能超过100M，超过就会报错。这时候就需要修改默认的限制大小
+
 443 after ××××× ms解决方案:git config --global --unset http.proxy
 长双错误解决方案:git config --global http.sslVerify true
 ```
@@ -113,7 +115,7 @@ pip install requests//使用git拉取python代码时，经常需要下载request
 
 ```
 短信轰炸命令：pipenv run python smsboom.py run -t 64 -p 17876442627 -s -i 5
-我的github访问令牌：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
+我的github访问令牌：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
 ```
 
 **坑标注**
