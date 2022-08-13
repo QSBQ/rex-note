@@ -122,5 +122,6 @@ pip install requests//使用git拉取python代码时，经常需要下载request
 
 ```
 如果git文件嵌套，那么提交外部git文件时，内部git文件的内容将不会提交，显示为空
+提交github时，要把能够连接github的火狐浏览器设置为默认浏览器，假若git命令行工具不奏效，那么可以使用VSCode编辑器的终端来推送或拉取
 ```
 
