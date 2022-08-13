@@ -38,7 +38,7 @@ git config --global user.email 邮箱==>设置用户签名，邮箱(必须设置
 git remote -v==>查看远程库信息
 git remote rm 远程仓库名==>删除和远程库的关联
 git remote add 别名 远程地址==>创建别名
-git clone 远程地址==>将远程仓库的内容克隆到本地(远程拉取项目后第一时间要npm i 安装所有依赖)
+git clone 远程地址 [新名称]==>将远程仓库的内容克隆到本地(远程拉取项目后第一时间要npm i 安装所有依赖)
 git pull 远程库地址别名 远程分支名==>将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并
 git push==>推送至远程版本库
 git pull==>拉回远程版本库的提交
